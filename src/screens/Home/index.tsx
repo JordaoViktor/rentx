@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { Text } from 'react-native';
+import { Text } from "react-native";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
 function Home() {
   return (
@@ -10,6 +10,6 @@ function Home() {
       <Text>Hello</Text>
     </Container>
   );
-};
+}
 
 export default Home;
