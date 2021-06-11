@@ -1,11 +1,19 @@
 import React from "react";
-import { Text } from "react-native";
-import { Container } from "./styles";
+import { StatusBar } from "react-native";
+import Logo from "../../assets/logo.svg";
+import { Container, Header } from "./styles";
 
 function Home() {
   return (
     <Container>
-      <Text>Hello</Text>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      <Header>
+        <Logo />
+      </Header>
     </Container>
   );
 }
