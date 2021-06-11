@@ -19,6 +19,7 @@ export const HeaderContent = styled.View`
   align-items: center;
   justify-content: space-between;
 `;
+
 export const TotalCars = styled.Text`
   font-size: ${RFValue(15)}px;
   font-family: ${({ theme }) => theme.fonts.primary_400};
