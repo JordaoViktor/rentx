@@ -1,6 +1,14 @@
 import React from "react";
 import { BackButton } from "../../components/BackButton";
 import { ImageSlider } from "../../components/ImageSlider";
+import { Assessory } from "../../components/Assessory";
+
+import speedSvg from "../../assets/speed.svg";
+import accelerationSvg from "../../assets/acceleration.svg";
+import forceSvg from "../../assets/force.svg";
+import gasolineSvg from "../../assets/gasoline.svg";
+import exchangeSvg from "../../assets/exchange.svg";
+import peopleSvg from "../../assets/people.svg";
 import {
   Container,
   Header,
@@ -13,6 +21,7 @@ import {
   Rent,
   Period,
   Price,
+  Assessories,
   About,
 } from "./styles";
 
@@ -37,10 +46,17 @@ export function CarDetails() {
           </Description>
           <Rent>
             <Period>Ao dia</Period>
-            <Price>580</Price>
+            <Price>R$ 580</Price>
           </Rent>
         </Details>
-
+        <Assessories>
+          <Assessory name="380km/h" icon={speedSvg} />
+          <Assessory name="1.25" icon={accelerationSvg} />
+          <Assessory name="800 HP" icon={forceSvg} />
+          <Assessory name="Gasolina" icon={gasolineSvg} />
+          <Assessory name="Auto" icon={exchangeSvg} />
+          <Assessory name="2 pessoas" icon={peopleSvg} />
+        </Assessories>
         <About>
           Este é automóvel desportivo. Surgiu do lendário touro de lide
           indultado na praça Real Maestranza de Sevilla. É um belíssimo carro
