@@ -2,7 +2,7 @@ import React from "react";
 import { BackButton } from "../../components/BackButton";
 import { ImageSlider } from "../../components/ImageSlider";
 import { Assessory } from "../../components/Assessory";
-
+import { Button } from "../../components/Button";
 import speedSvg from "../../assets/speed.svg";
 import accelerationSvg from "../../assets/acceleration.svg";
 import forceSvg from "../../assets/force.svg";
@@ -23,6 +23,7 @@ import {
   Price,
   Assessories,
   About,
+  Footer,
 } from "./styles";
 
 export function CarDetails() {
@@ -63,6 +64,9 @@ export function CarDetails() {
           para quem gosta de acelerar.
         </About>
       </Content>
+      <Footer>
+        <Button title="Confirmar" color="green" />
+      </Footer>
     </Container>
   );
 }
