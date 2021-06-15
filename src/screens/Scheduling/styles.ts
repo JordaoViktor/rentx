@@ -63,6 +63,7 @@ export const Content = styled.ScrollView.attrs({
   },
   showsVerticalScrollIndicator: false,
 })``;
+
 export const Footer = styled.View`
   padding: 24px;
 `;
