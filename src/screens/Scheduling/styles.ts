@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
 interface DateValueProps {
   selected: boolean;
@@ -16,6 +17,7 @@ export const Header = styled.View`
 
   justify-content: center;
   padding: 25px;
+  padding-top: ${getStatusBarHeight() + 30}px;
 `;
 export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
@@ -29,6 +31,7 @@ export const RentalPeriod = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 32px 0;
 `;
 export const DateInfo = styled.View`
   width: 30%;
@@ -39,24 +42,27 @@ export const DateTitle = styled.Text`
   font-size: ${RFValue(10)}px;
 `;
 
-export const DateValue = styled.Text<DateValueProps>`
+export const DateValue = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
   font-family: ${({ theme }) => theme.fonts.primary_500};
   font-size: ${RFValue(15)}px;
-  /* position: absolute; */
+`;
+
+export const BorderView = styled.View<DateValueProps>`
   ${({ theme, selected }) =>
     !selected &&
     css`
-      border-style: solid;
-      border-bottom-width: 20px;
-      border-bottom-color: red;
-      /* background-color: red; */
-      /* border-bottom-color: ${theme.colors.text}; */
-      /* position: absolute; */
-      /* border-left-width: 20px; */
-      /* border-left-color: red; */
-      /* border-color: #fff; */
-      /* border: solid 1px ${theme.colors.text}; */
-      /* border-top-width: 0; */
+      border-bottom-width: 1px;
+      border-bottom-color: ${({ theme }) => theme.colors.text};
     `};
+`;
+
+export const Content = styled.ScrollView.attrs({
+  contentContainerStyle: {
+    paddingBottom: 24,
+  },
+  showsVerticalScrollIndicator: false,
+})``;
+export const Footer = styled.View`
+  padding: 24px;
 `;
