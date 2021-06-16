@@ -2,7 +2,7 @@ import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { BackButton } from "../../components/BackButton";
 import { ImageSlider } from "../../components/ImageSlider";
-import { Assessory } from "../../components/Assessory";
+import { Accessory } from "../../components/Accessory";
 import { Button } from "../../components/Button";
 import speedSvg from "../../assets/speed.svg";
 import accelerationSvg from "../../assets/acceleration.svg";
@@ -22,7 +22,7 @@ import {
   Rent,
   Period,
   Price,
-  Assessories,
+  Accessories,
   RentalPeriod,
   CalendarIcon,
   DateInfo,
@@ -68,14 +68,14 @@ export function SchedulingDetails() {
             <Price>R$ 580</Price>
           </Rent>
         </Details>
-        <Assessories>
-          <Assessory name="380km/h" icon={speedSvg} />
-          <Assessory name="1.25" icon={accelerationSvg} />
-          <Assessory name="800 HP" icon={forceSvg} />
-          <Assessory name="Gasolina" icon={gasolineSvg} />
-          <Assessory name="Auto" icon={exchangeSvg} />
-          <Assessory name="2 pessoas" icon={peopleSvg} />
-        </Assessories>
+        <Accessories>
+          <Accessory name="380km/h" icon={speedSvg} />
+          <Accessory name="1.25" icon={accelerationSvg} />
+          <Accessory name="800 HP" icon={forceSvg} />
+          <Accessory name="Gasolina" icon={gasolineSvg} />
+          <Accessory name="Auto" icon={exchangeSvg} />
+          <Accessory name="2 pessoas" icon={peopleSvg} />
+        </Accessories>
         <RentalPeriod>
           <CalendarIcon>
             <Feather
