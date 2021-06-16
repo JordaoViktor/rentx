@@ -5,7 +5,7 @@ import { Container, Header, HeaderContent, TotalCars, CarList } from "./styles";
 import { RFValue } from "react-native-responsive-fontsize";
 import { Car } from "../../components/Car";
 import { useNavigation } from "@react-navigation/native";
-
+import { api } from "../../services/api";
 export function Home() {
   const navigation = useNavigation();
 
