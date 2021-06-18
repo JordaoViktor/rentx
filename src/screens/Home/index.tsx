@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { RFValue } from "react-native-responsive-fontsize";
 import { StatusBar } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import Logo from "../../assets/logo.svg";
 import { Container, Header, HeaderContent, TotalCars, CarList } from "./styles";
-import { RFValue } from "react-native-responsive-fontsize";
 import { Car } from "../../components/Car";
 import { Load } from "../../components/Load";
-import { useNavigation } from "@react-navigation/native";
 import { api } from "../../services/api";
 import { CarDTO } from "../../dtos/CarDTO";
 
