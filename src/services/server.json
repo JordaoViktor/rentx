@@ -345,7 +345,15 @@
       "unavailable_dates": [
         "2021-06-19",
         "2021-06-20",
-        "2021-06-21"
+        "2021-06-21",
+        "2021-06-18",
+        "2021-06-19",
+        "2021-06-20",
+        "2021-06-21",
+        "2021-06-22",
+        "2021-06-23",
+        "2021-06-24",
+        "2021-06-25"
       ]
     },
     {
@@ -359,7 +367,14 @@
         "2021-06-12",
         "2021-06-17",
         "2021-06-18",
-        "2021-06-19"
+        "2021-06-19",
+        "2021-06-24",
+        "2021-06-25",
+        "2021-06-26",
+        "2021-06-27",
+        "2021-06-28",
+        "2021-06-29",
+        "2021-06-30"
       ]
     },
     {
@@ -374,32 +389,32 @@
     {
       "user_id": 1,
       "car": {
-        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
-        "brand": "Chevrolet",
-        "name": "Corvette Z06",
-        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
+        "id": "49983f6c-a46a-4dfd-a86e-425b8c72e086",
+        "brand": "Lamborghini",
+        "name": "Huracan",
+        "about": "Este é automóvel desportivo. Surgiu do lendário touro de lide indultado na praça Real Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.",
         "rent": {
           "period": "Ao dia",
-          "price": 620
+          "price": 120
         },
-        "fuel_type": "gasoline_motor",
-        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
+        "fuel_type": "electric_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/4.png",
         "accessories": [
           {
             "type": "speed",
-            "name": "330km/h"
+            "name": "380km/h"
           },
           {
             "type": "acceleration",
-            "name": "6.2s"
+            "name": "3.2s"
           },
           {
             "type": "turning_diameter",
-            "name": "900 HP"
+            "name": "800 HP"
           },
           {
-            "type": "gasoline_motor",
-            "name": "Gasoline"
+            "type": "electric_motor",
+            "name": "Elétrico"
           },
           {
             "type": "exchange",
@@ -411,11 +426,13 @@
           }
         ],
         "photos": [
-          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
-          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
-          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/9.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/10.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/11.png"
         ]
       },
+      "startDate": "18/06/2021",
+      "endDate": "25/06/2021",
       "id": 1
     }
   ]
