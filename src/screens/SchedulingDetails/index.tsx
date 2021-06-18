@@ -60,12 +60,16 @@ export function SchedulingDetails() {
   const navigation = useNavigation();
   async function handleConfirmRental() {
     const schedulesByCar = await api.get(`/schedules_bycars/${car.id}`);
-    console.log("hei", schedulesByCar);
 
     const unavailable_dates = [
       ...schedulesByCar.data.unavailable_dates,
       ...dates,
     ];
+
+    await api.post("/schedules_byuser", {
+      user_id: 1,
+      car,
+    });
 
     api
       .put(`/schedules_bycars/${car.id}`, {
